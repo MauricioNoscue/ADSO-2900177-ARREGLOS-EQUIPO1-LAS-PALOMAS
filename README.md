@@ -1,12 +1,12 @@
 
-#ADSO-2900177EQUIPO1 LAS PALOMAS 
+# ADSO-2900177EQUIPO1 LAS PALOMAS 
 
-#POYECTO 1.
+#P OYECTO 1.
 # AGENCIA DE VIAJES  
 ## Requerimientos del proyecto 
 -
 -
-#PROYECTO 2.
+# PROYECTO 2.
 # FARMACIA 
 ## Requerimientos del proyecto 
 -
