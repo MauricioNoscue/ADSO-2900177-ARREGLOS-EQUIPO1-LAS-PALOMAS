@@ -6,7 +6,7 @@
 ## Requerimientos del proyecto 
 - Es una agencia de viajes que que permite a los consumidores buscar y reservar  servicios de viaje directamente.
 - Facilita al usuario saber durante cuanto tiempo tiene que ahorrar para lograr viajar al pais elegido.
-- Es facil, versatil y precisa, mostrando todos lo valores para llevar unas cuentas claras.
+- Es facil, versatil y preciso, mostrando todos lo valores para llevar unas cuentas claras.
   
 # PROYECTO 2 - FARMACIA 
 
@@ -20,7 +20,8 @@
 - Sergio Andres Leguizamo Vargas
 - Natalia osorio
 - Andrés Mauricio Noscue
-- Daniel bata
-- jesus David Fierro
+- Daniel Felipe
+-  Bata
+- Jesus David Fierro
 - Rubén Felipe Tovar
   
