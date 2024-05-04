@@ -20,8 +20,7 @@
 - Sergio Andres Leguizamo Vargas
 - Natalia osorio
 - Andrés Mauricio Noscue
-- Daniel Felipe
--  Bata
+- Daniel Felipe Bata
 - Jesus David Fierro
 - Rubén Felipe Tovar
   
