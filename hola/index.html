@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factura</title>
+</head>
+<body>
+    <script>
+        let nombre = prompt("Ingrese su Nombre:");
+        let factura = [];
+
+        while (true) {
+            let respuesta = prompt("Ingrese su molestia: " + nombre + "\n" + "Elija (1/2)" + "\n" + "1. Dolor de cabeza" + "\n" + "2. Dolor de espalda");
+
+            let opciones;
+            if (respuesta == 1) {
+                opciones = "1. Acetaminofen\n2. Paracetamol\n3. Ibuprufeno";
+            } else if (respuesta == 2) {
+                opciones = "1. Xreydol\n2. Lumbal\n3. Duraflex";
+            } else {
+                alert("Opción no válida");
+                continue;
+            }
+
+            let eleccion = prompt("Elija el medicamento recomendado para su molestia" + "\n" + opciones);
+
+            let descripcion;
+            let precio;
+
+            switch (respuesta) {
+                case "1":
+                    switch (eleccion) {
+                        case "1":
+                            descripcion = "Acetaminofen";
+                            precio = 300;
+                            break;
+                        case "2":
+                            descripcion = "Paracetamol";
+                            precio = 200;
+                            break;
+                        case "3":
+                            descripcion = "Ibuprufeno";
+                            precio = 400;
+                            break;
+                        default:
+                            alert("Opción no válida");
+                            continue;
+                    }
+                    break;
+                case "2":
+                    switch (eleccion) {
+                        case "1":
+                            descripcion = "Xreydol";
+                            precio = 2000;
+                            break;
+                        case "2":
+                            descripcion = "Lumbal";
+                            precio = 2700;
+                            break;
+                        case "3":
+                            descripcion = "Duraflex";
+                            precio = 2800;
+                            break;
+                        default:
+                            alert("Opción no válida");
+                            continue;
+                    }
+                    break;
+            }
+
+            let cantidad = prompt("Ingrese la cantidad de " + descripcion + " que va a llevar: ");
+            let subtotal = cantidad * precio;
+            factura.push({ descripcion, precio, cantidad, subtotal });
+
+            let mas = prompt("Desea comprar más productos" + "\n" + "Elija (si/no)");
+            if (mas.toLowerCase() === "no") {
+                break;
+            }
+        }
+
+        mostrarFactura();
+
+        function mostrarFactura() {
+            let total = 0;
+            let facturaTexto = "Factura para: " + nombre + "\n\n";
+
+            factura.forEach(item => {
+                facturaTexto += "Producto: " + item.descripcion + "\n"+" Precio unitario: " + item.precio +"\n"+ " Cantidad: " + item.cantidad +"\n"+ " Subtotal: " + item.subtotal + " pesos\n";
+                total += item.subtotal;
+            });
+
+            facturaTexto += "\nTotal a pagar: " + total.toFixed(2) + " pesos";
+            alert(facturaTexto);
+        }
+    </script>
+</body>
+</html>
