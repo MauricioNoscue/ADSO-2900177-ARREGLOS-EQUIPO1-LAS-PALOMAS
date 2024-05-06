@@ -7,14 +7,23 @@
 </head>
 <body>
     <script>
+
+        // les voy a poner mensajitos para no perdernos 
+
+        // obviamente aqui pedimos el ingreso del nombre 
         let nombre = prompt("Ingrese su Nombre:");
+        // inicializamos el arreglo que vamos a utilizar para la factura
         let factura = [];
-
+        // el ciclo que vamos a utilizar en este caso es while (true), para que sea más facil y funciona asi
+        // mientras lo de adentro sea verdadero siga su camino y podamos elegir normal 
         while (true) {
+            // ya aqui está la variable del nombre, y ponemos a elegir que dolor tiene 
             let respuesta = prompt("Ingrese su molestia: " + nombre + "\n" + "Elija (1/2)" + "\n" + "1. Dolor de cabeza" + "\n" + "2. Dolor de espalda");
-
+            // utilizamos una nueva variable llamada opciones, que depende de la eleccion del usuario le muestre las opciones 
             let opciones;
+            // bueno la condicional jajaj
             if (respuesta == 1) {
+                
                 opciones = "1. Acetaminofen\n2. Paracetamol\n3. Ibuprufeno";
             } else if (respuesta == 2) {
                 opciones = "1. Xreydol\n2. Lumbal\n3. Duraflex";
@@ -22,13 +31,22 @@
                 alert("Opción no válida");
                 continue;
             }
-
+            // aqui le pedimos que elija el medicamento que le recomendamos
             let eleccion = prompt("Elija el medicamento recomendado para su molestia" + "\n" + opciones);
+            /*
+            utilizamos otras variables
+            la descripcion es el nombre del producto
+            el precio es el precio del producto ajsjas obviamente 
+            */
 
             let descripcion;
             let precio;
-
+            /*
+            aqui le decimos que dependiendo de la eleccion del usuario 
+            le muestre el producto que le recomendamos
+            */ 
             switch (respuesta) {
+                // el case 1 es cuando el usuario dice que tiene dolor de cabeza 
                 case "1":
                     switch (eleccion) {
                         case "1":
@@ -45,9 +63,14 @@
                             break;
                         default:
                             alert("Opción no válida");
+
+                            /* el "continue" funciona para que el ciclo siga su camino y no se corte con 
+                            el break pues el ciclo pasa a ser falso si llega a un break     
+                            */
                             continue;
                     }
                     break;
+                    // el case 2 es cuando el usuario dice que tiene dolor de espalda
                 case "2":
                     switch (eleccion) {
                         case "1":
@@ -64,25 +87,42 @@
                             break;
                         default:
                             alert("Opción no válida");
+                            /* el "continue" funciona para que el ciclo siga su camino y no se corte con 
+                            el break pues el ciclo pasa a ser falso si llega a un break     
+                            */
                             continue;
                     }
                     break;
             }
-
+            // el prompt es para que el usuario ingrese la cantidad de productos que va a llevar
             let cantidad = prompt("Ingrese la cantidad de " + descripcion + " que va a llevar: ");
+            // calculamos el subtotal de los productos 
             let subtotal = cantidad * precio;
+            // en el arreglo metemos todas las variables que vamos a mostrar en factura
+            // el push es para agregar los datos al arreglo
             factura.push({ descripcion, precio, cantidad, subtotal });
-
+            // el prompt es para que el usuario ingrese si quiere comprar más productos
             let mas = prompt("Desea comprar más productos" + "\n" + "Elija (si/no)");
+           // el toLowerCase es como un convertidor, si se ingresa mayusculas las convierte en minusculas 
             if (mas.toLowerCase() === "no") {
+                 // el "break" es para que el ciclo se detenga si el usuario no quiere comprar más productos
+                 // en el codigo hay muchos break pero no influyen en el ciclo, en cambio este si por lo cual
+                //se corta el ciclo si el usurario dice que no quiere mas productos 
                 break;
             }
         }
-
+        // llamamos la funcion, esta misma tiene un alert en el cual imprime lo siguiente 
         mostrarFactura();
 
+
+        //  la funcion que vamos a utilizar para mostrar la factura 
+
         function mostrarFactura() {
+            // aqui se me van a enredar un poquito mis amigos valieron queso 
+
+            //  utilizamos una variable para almacenar los subTotales de los productos 
             let total = 0;
+            //      
             let facturaTexto = "Factura para: " + nombre + "\n\n";
 
             factura.forEach(item => {
