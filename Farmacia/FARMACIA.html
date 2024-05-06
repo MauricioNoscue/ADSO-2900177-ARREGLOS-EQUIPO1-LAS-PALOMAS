@@ -94,9 +94,15 @@
                     }
                     break;
             }
-            // el prompt es para que el usuario ingrese la cantidad de productos que va a llevar
-            let cantidad = prompt("Ingrese la cantidad de " + descripcion + " que va a llevar: ");
-            // calculamos el subtotal de los productos 
+            let cantidad;
+            while (true) {
+                cantidad = prompt("Ingrese la cantidad de " + descripcion + " que va a llevar: ");
+                if (!isNaN(cantidad) && parseInt(cantidad) > 0) {
+                    break;
+                } else {
+                    alert("Cantidad no válida. Por favor, ingrese un número entero mayor que cero.");
+                }
+            }
             let subtotal = cantidad * precio;
             // en el arreglo metemos todas las variables que vamos a mostrar en factura
             // el push es para agregar los datos al arreglo
@@ -122,15 +128,21 @@
 
             //  utilizamos una variable para almacenar los subTotales de los productos 
             let total = 0;
-            //      
+            //  eta variable la vamos a utilizar para almacenar todos los datos de la factura      
             let facturaTexto = "Factura para: " + nombre + "\n\n";
-
-            factura.forEach(item => {
-                facturaTexto += "Producto: " + item.descripcion + "\n"+" Precio unitario: " + item.precio +"\n"+ " Cantidad: " + item.cantidad +"\n"+ " Subtotal: " + item.subtotal + " pesos\n";
-                total += item.subtotal;
+            /*
+            *    aqui se va a recorrer el arreglo factura y se va a ir agregando a la variable facturaTexto
+            *    el forEach es para recorrer el arreglo factura
+            *    el "almacenar" es para que se vaya agregando a la variable facturaTexto
+            */
+            factura.forEach(almacenar => {
+                //
+                facturaTexto += "Producto: " + almacenar.descripcion + "\n"+" Precio unitario: " + almacenar.precio +"\n"+ " Cantidad: " + almacenar.cantidad +"\n"+ " Subtotal: " + almacenar.subtotal + " pesos\n";
+                total += almacenar.subtotal;
             });
-
-            facturaTexto += "\nTotal a pagar: " + total.toFixed(2) + " pesos";
+            // terminamos de concatnear lo que queremos que se muestre en la factura 
+            facturaTexto += "\nTotal a pagar: " + total + " pesos";
+            // y listo, se muestra la factura 
             alert(facturaTexto);
         }
     </script>
