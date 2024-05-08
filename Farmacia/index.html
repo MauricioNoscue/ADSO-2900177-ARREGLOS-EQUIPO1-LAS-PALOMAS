@@ -7,17 +7,17 @@
 </head>
 <body>
     <script>
-        let nombre = prompt("Ingrese su Nombre:");
+        let nombre = prompt("Ingrese su nombre, Por favor");
         let factura = [];
 
         while (true) {
-            let respuesta = prompt("Ingrese su molestia: " + nombre + "\n" + "Elija (1/2)" + "\n" + "1. Dolor de cabeza" + "\n" + "2. Dolor de espalda");
+            let respuesta = prompt("Ingrese su molestia Señor " + nombre + "\n" + "Elija (1/2)" + "\n" + "1. Dolor de cabeza" + "\n" + "2. Dolor de espalda");
 
             let opciones;
             if (respuesta == 1) {
-                opciones = "1. Acetaminofen\n2. Paracetamol\n3. Ibuprufeno";
+                opciones = "1. Acetaminofen 300.00$\n2. Paracetamol 200.00$\n3. Ibuprufeno 400.00$.";
             } else if (respuesta == 2) {
-                opciones = "1. Xreydol\n2. Lumbal\n3. Duraflex";
+                opciones = "1. Xreydol 2000.00$\n2. Lumbal 2700.00$\n3. Duraflex 2800.00$.";
             } else {
                 alert("Opción no válida");
                 continue;
