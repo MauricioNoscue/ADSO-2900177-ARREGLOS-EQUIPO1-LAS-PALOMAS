@@ -33,7 +33,7 @@ Nos destacamos por brindar una experiencia de usuario fácil, segura y personali
 
 ## Algunas características de la farmacia 
 
-- Nuestra farmacia online es una plataforma digital que ofrece una amplia gama de productos farmacéuticos y de cuidado personal, permitiendo a los clientes ordenar medicamentos, productos de salud y bienestar desde la comodidad de sus hogares.
+- Nuestra farmacia online es una plataforma digital que ofrece una amplia gama de productos farmacéuticos, permitiendo a los clientes ordenar medicamentos, y bienestar desde la comodidad de sus hogares.
 
 - ventajas: Comodidad: Los clientes pueden ordenar productos desde casa, evitando desplazamientos innecesarios a una farmacia física.
 
