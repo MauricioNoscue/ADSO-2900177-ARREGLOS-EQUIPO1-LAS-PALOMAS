@@ -13,9 +13,7 @@
 - Nuestra agencia de viajes online es una plataforma digital que ofrece una amplia gama de servicios relacionados con viajes.
 Nos destacamos por brindar una experiencia de usuario fácil, segura y personalizada, permitiendo a nuestros clientes planificar sus viajes de manera eficiente y conveniente desde la comodidad de sus hogares.
 
--Accesibilidad: Disponible las 24 horas del día, los 7 días de la semana, desde cualquier lugar con conexión a internet.
-
--Variedad de opciones: Ofrecemos una amplia selección de destinos, para adaptarnos a las preferencias de cada cliente.
+- Variedad de opciones: Ofrecemos una amplia selección de destinos, para adaptarnos a las preferencias de cada cliente.
 
 - Comodidad: Los clientes pueden comparar precios y planificar su viaje sin la necesidad de desplazarse físicamente a una agencia de viajes tradicional.
 
