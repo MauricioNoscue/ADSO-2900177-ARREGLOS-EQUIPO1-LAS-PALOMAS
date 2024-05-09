@@ -40,6 +40,7 @@
             */
 
             let descripcion;
+            let descripcion2;
             let precio;
             /*
             aqui le decimos que dependiendo de la eleccion del usuario 
@@ -50,15 +51,18 @@
                 case "1":
                     switch (eleccion) {
                         case "1":
-                            descripcion = "Acetaminofen";
+                            descripcion = "Acetaminofen"
+                            descripcion2 = "Debe tomarlo cada 8 horas"+"\n"+"si toma en exceso puede generar mareos";
                             precio = 300;
                             break;
                         case "2":
                             descripcion = "Paracetamol";
+                            descripcion2 = "Puede tomarlo de 4 a 6 horas "+"\n"+"si toma en exceso puede generar irritación estomacal";
                             precio = 200;
                             break;
                         case "3":
                             descripcion = "Ibuprufeno";
+                            descripcion2 = "Debe tomarlo cada 6 "+"\n"+"si toma en exceso puede generar agitación o convulsiones";
                             precio = 400;
                             break;
                         default:
@@ -75,14 +79,17 @@
                     switch (eleccion) {
                         case "1":
                             descripcion = "Xreydol";
+                            descripcion2 = "Debe tomar una cada 12 horas"+"\n"+"si toma en exceso puede generar reacciones alérgicas";
                             precio = 2000;
                             break;
                         case "2":
                             descripcion = "Lumbal";
+                            descripcion2 = "Debe tomar una cada 12 horas"+"\n"+"si toma en exceso puede generar náuseas y vómitos ";
                             precio = 2700;
                             break;
                         case "3":
                             descripcion = "Duraflex";
+                            descripcion2 = "Puede tomar una tableta cada 8 o 12 horas"+"\n"+"si toma en exceso puede generar mareos";
                             precio = 2800;
                             break;
                         default:
@@ -96,7 +103,7 @@
             }
             let cantidad;
             while (true) {
-                cantidad = prompt("Ingrese la cantidad de " + descripcion + " que va a llevar: ");
+                cantidad = prompt("Ingrese la cantidad de " + descripcion +" que va a llevar: ");
                 if (!isNaN(cantidad) && parseInt(cantidad) > 0) {
                     break;
                 } else {
@@ -106,7 +113,7 @@
             let subtotal = cantidad * precio;
             // en el arreglo metemos todas las variables que vamos a mostrar en factura
             // el push es para agregar los datos al arreglo
-            factura.push({ descripcion, precio, cantidad, subtotal });
+            factura.push({ descripcion,descripcion2, precio, cantidad, subtotal });
             // el prompt es para que el usuario ingrese si quiere comprar más productos
             let mas = prompt("Desea comprar más productos" + "\n" + "Elija (si/no)");
            // el toLowerCase es como un convertidor, si se ingresa mayusculas las convierte en minusculas 
@@ -137,14 +144,19 @@
             */
             factura.forEach(almacenar => {
                 //
-                facturaTexto += "Producto: " + almacenar.descripcion + "\n"+" Precio unitario: " + almacenar.precio +"\n"+ " Cantidad: " + almacenar.cantidad +"\n"+ " Subtotal: " + almacenar.subtotal + " pesos\n";
+                facturaTexto += "PRODUCTO: " + almacenar.descripcion + "\n"+   "RECOMENDACIONES DE USO: " +"\n"+almacenar.descripcion2 +"\n"+     " PRECIO UNITARIO: " +"$"+ almacenar.precio +"\n"+ " CANTIDAD: " + almacenar.cantidad +"\n"+ " SUBTOTAL: " +"$"+ almacenar.subtotal + " pesos\n";
                 total += almacenar.subtotal;
             });
             // terminamos de concatnear lo que queremos que se muestre en la factura 
-            facturaTexto += "\nTotal a pagar: " + total + " pesos";
+            facturaTexto += "\nTotal a pagar: " + "$"+ total + " pesos";
             // y listo, se muestra la factura 
             alert(facturaTexto);
         }
+
+    
+        
+        alert("Gracias por su compra, vuelva pronto"+ "\n"+"   /\\       /\\\n  /  \\_____/  \\\n /               \\ \n|  ( ● ) ( ● )  |\n \\     (_)      /\n  \\___________/");
+
     </script>
 </body>
 </html>
