@@ -19,15 +19,15 @@
 
 ## Algunas características de la farmacia 
 
- ### Nuestra farmacia online es una plataforma digital que ofrece una amplia gama de productos farmacéuticos y de cuidado personal, permitiendo a los clientes ordenar medicamentos, productos de salud y bienestar desde la comodidad de sus hogares.
+- Nuestra farmacia online es una plataforma digital que ofrece una amplia gama de productos farmacéuticos y de cuidado personal, permitiendo a los clientes ordenar medicamentos, productos de salud y bienestar desde la comodidad de sus hogares.
 
-###  ventajaas: Comodidad: Los clientes pueden ordenar productos desde casa, evitando desplazamientos innecesarios a una farmacia física.
+- ventajaas: Comodidad: Los clientes pueden ordenar productos desde casa, evitando desplazamientos innecesarios a una farmacia física.
 
-### Amplia Selección: Ofrecemos una amplia variedad de productos farmacéuticos , incluyendo marcas reconocidas
+- Amplia Selección: Ofrecemos una amplia variedad de productos farmacéuticos , incluyendo marcas reconocidas
 
-### Privacidad: Los clientes pueden realizar compras discretas y confidenciales, sin necesidad de interactuar físicamente con personal de la farmacia.
+- Privacidad: Los clientes pueden realizar compras discretas y confidenciales, sin necesidad de interactuar físicamente con personal de la farmacia.
 
-### Información Detallada: Proporcionamos información detallada sobre cada producto, incluyendo instrucciones de uso, efectos secundarios y precauciones
+- Información Detallada: Proporcionamos información detallada sobre cada producto, incluyendo instrucciones de uso, efectos secundarios y precauciones
 
 # INTEGRANTES DEL EQUIPO 
 - Sergio Andres Leguizamo Vargas
