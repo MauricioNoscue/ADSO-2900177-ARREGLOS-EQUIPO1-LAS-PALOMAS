@@ -5,7 +5,7 @@
 
 
 ## Requerimientos del proyecto 
-- Es una agencia de viajes que que permite a los consumidores buscar y reservar  servicios de viaje directamente.
+- Es una agencia de viajes que permite a los consumidores buscar y reservar  servicios de viaje directamente.
 - Facilita al usuario saber durante cuanto tiempo tiene que ahorrar para lograr viajar al pais elegido.
 - Es facil, versatil y preciso, mostrando todos lo valores para llevar unas cuentas claras.
 
