@@ -5,7 +5,7 @@
 
 
 ## Requerimientos del proyecto 
-- Es una agencia de viajes que que permite a los consumidores buscar y reservar  servicios de viaje directamente.
+- Es una agencia de viajes que permite a los consumidores buscar y reservar  servicios de viaje directamente.
 - Facilita al usuario saber durante cuanto tiempo tiene que ahorrar para lograr viajar al pais elegido.
 - Es facil, versatil y preciso, mostrando todos lo valores para llevar unas cuentas claras.
 
@@ -33,7 +33,7 @@ Nos destacamos por brindar una experiencia de usuario fácil, segura y personali
 
 ## Algunas características de la farmacia 
 
-- Nuestra farmacia online es una plataforma digital que ofrece una amplia gama de productos farmacéuticos y de cuidado personal, permitiendo a los clientes ordenar medicamentos, productos de salud y bienestar desde la comodidad de sus hogares.
+- Nuestra farmacia online es una plataforma digital que ofrece una amplia gama de productos farmacéuticos, permitiendo a los clientes ordenar medicamentos, y bienestar desde la comodidad de sus hogares.
 
 - ventajas: Comodidad: Los clientes pueden ordenar productos desde casa, evitando desplazamientos innecesarios a una farmacia física.
 
