@@ -96,7 +96,7 @@ alert("Bienvenido Farmacia Las Palomas");
             }
             let cantidad;
             while (true) {
-                cantidad = prompt("Ingrese la cantidad de tabletas de" + descripcion +" que desea a llevar: ");
+                cantidad = prompt("Ingrese la cantidad de tabletas de " + descripcion +" que desea a llevar: ");
                 if (!isNaN(cantidad) && parseInt(cantidad) > 0) {
                     break;
                 } else {
